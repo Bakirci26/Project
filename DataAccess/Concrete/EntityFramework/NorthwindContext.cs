@@ -13,10 +13,10 @@ namespace DataAccess.Concrete.EntityFramework
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocaldb;Database=Northwind;Trusted_Connection=true");
         }
 
-        //Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = Northwind; Integrated Security = True; Connect Timeout = 30; 
-        //Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+        
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
